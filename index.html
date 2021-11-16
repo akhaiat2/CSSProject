@@ -1,0 +1,55 @@
+<style>
+  :root {
+    --bg: #009bc8;
+    --apple: #ff4e18;
+    --spots: #3503102b;
+    --brown: #914400;
+    --meat: #754B35;
+    --salad: #2BBF7F;
+    --tomato: #D65353;
+    --blue: #3AD3EA;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+  }
+
+  .frame {
+    /* background-color: rgba(255,0,0,0.3); */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+  }
+
+  .apple {
+    background-color: var(--apple);
+    width: 70%;
+    height: 60%;
+    border-radius: 30% 70% 50% 50% / 50% 50% 50% 50%;
+    background-image: radial-gradient(var(--spots) 5%, transparent 0),
+      radial-gradient(var(--spots) 5%, transparent 0);
+    background-size: 50px 30px;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+    right: 20%;
+    top: 20%
+  }
+
+  .stem {
+    background-color: var(--brown);
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 24%;
+    left: 24%;
+  }
+</style>
+<div class="frame">
+  <div class="apple"></div>
+  <div class="stem"></div>
+</div>
