@@ -7,7 +7,7 @@
     --meat: #754B35;
     --salad: #2BBF7F;
     --tomato: #D65353;
-    --darkbrown: #3AD3EA;
+    --darkbrown: #6630008e;
   }
 
   body {
@@ -55,19 +55,32 @@
     width: 15%;
     height: 10%;
     position: absolute;
-    top: 31%;
-    right: 53%;
+    top: 31.5%;
+    right: 51.5%;
     border-radius: 10% 100% 0% 70%;;
   }
   .leafstem {
-    background-color: var(--darkbrown)
+    background-color: var(--darkbrown);
+    width: 80%;
+    height: 6%;
+    top: 70%;
+    left: 30%;
+    position: absolute;
+    transform: rotate(30deg) scale(0.9);
   }
   
+  .leafvein:nth-child(1) {
+    top: 50%;
+    left: 30%;
+    transform: rotate(-60deg) scale(0.9);
+  }
+
 </style>
 <div class="frame">
   <div class="apple"></div>
   <div class="stem"></div>
 </div>
+
 <div class="leaf"> 
 	<div class="leafstem"></div>
   <div class="leafvein"></div>
