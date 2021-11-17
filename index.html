@@ -5,7 +5,7 @@
     --spots: #3503102b;
     --brown: #914400;
     --meat: #754B35;
-    --salad: #2BBF7F;
+    --green: #2BBF7F;
     --tomato: #D65353;
     --darkbrown: #6630008e;
   }
@@ -51,37 +51,71 @@
   }
   
   .leaf {
-    background-color: var(--salad);
-    width: 15%;
-    height: 10%;
+    background-color: var(--green);
+    width: 35%;
+    height: 25%;
     position: absolute;
-    top: 31.5%;
-    right: 51.5%;
-    border-radius: 10% 100% 0% 70%;;
+    bottom: 79.5%;
+    right: 55%;
+    border-radius: 10% 100% 0% 70%;
   }
   .leafstem {
     background-color: var(--darkbrown);
-    width: 80%;
-    height: 6%;
-    top: 70%;
-    left: 30%;
+    width: 30%;
+    height: 2%;
+    top: 12.5%;
+    left: 18.5%;
     position: absolute;
     transform: rotate(30deg) scale(0.9);
+    border-radius: 20%;
+  }
+  
+  .leafveins {
+    /*background-color: var(--darkbrown);*/
+    width: 10%;
+    height: 2%;
+    position: absolute;
+    border-radius: 20%;
+    top: 14%;
+    left: 14%;
+  }
+  
+  .leafvein {
+    background-color: var(--darkbrown);
+    width: 70%;
+    height: 40%;
+    position: absolute;
+    border-radius: 20%;
   }
   
   .leafvein:nth-child(1) {
     top: 50%;
-    left: 30%;
-    transform: rotate(-60deg) scale(0.9);
+    left: 120%;
+    transform: rotate(-50deg);
+  }
+ 
+  .leafvein:nth-child(2) {
+    bottom: 80%;
+    left: 100%;
+    transform: rotate(-50deg);
+  }
+  
+  .leafvein:nth-child(3) {
+    bottom: 80%;
+    left: 100%;
+    transform: rotate(-50deg);
   }
 
 </style>
 <div class="frame">
   <div class="apple"></div>
   <div class="stem"></div>
-</div>
-
-<div class="leaf"> 
+  <div class="leaf"> </div>
 	<div class="leafstem"></div>
+  <div class="leafveins">
   <div class="leafvein"></div>
+  <div class="leafvein"></div>
+  <div class="leafvein"></div>
+  <div class="leafvein"></div>
+  </div>
 </div>
