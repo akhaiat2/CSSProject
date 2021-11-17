@@ -39,7 +39,7 @@
     right: 20%;
     top: 20%
   }
-
+  
   .stem {
     background-color: var(--brown);
     width: 25%;
@@ -137,18 +137,13 @@
     position: absolute;
   }
   
-  .b1 {
-    right: 6%;
-    top: 28%;
-    visibility: hidden;
+  .bites1{
+    background-color: var(--apple);
+    width 15%;
+    height: 5%;
+    border-radius: 50%;
+    position: absolute
   }
-  
-  .b2 {
-    top: 20%;
-    right: 10%;
-    visibility: hidden;
-  }
-  
 </style>
 <div class="frame">
   <div class="apple"></div>
@@ -163,30 +158,6 @@
   <div class="leafvein"></div>
   <div class="leafvein"></div>
   </div>
-  <div class="bites b1"></div>
-  <div class="bites b2"></div>
+  <div class="bites"></div>
+  <div class="bites1"></div>
 </div>
-
-<script>
-  
-  const shell = document.querySelector('.s-right')
-  const tear = document.querySelector('.tear')
-  const mouth = document.querySelector('.mouth')
-  const b1 = document.querySelector('.b1')
-  const b2 = document.querySelector('.b2')
-  
-  let clicks = 0
-  
-  function biteApple () {
-    if (clicks === 0) {
-      b1.style.visibility = 'visible'
-      clicks = 1
-    } else if (clicks === 1) {
-      b2.style.visibility = 'visible'
-      clicks = 2
-    }
-  }
-  
-  shell.addEventListener('click', biteTaco)
-
-</script>
