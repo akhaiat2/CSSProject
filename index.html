@@ -27,7 +27,6 @@
 
   .apple {
     background-color: var(--apple);
-    transition: background-color 1s;
     width: 70%;
     height: 60%;
     border-radius: 30% 70% 50% 50% / 50% 50% 50% 50%;
@@ -125,10 +124,6 @@
     transform: rotate(-50deg);
   }
   
-  .apple:hover {
-    background-color: orange;
-  }
-  
   .bites {
     background-color: var(--bg);
     width: 15%;
@@ -138,12 +133,35 @@
   }
   
   .bites1{
-    background-color: var(--apple);
-    width 15%;
-    height: 5%;
+    background-color: var(device-pixel-ratio: );
+    transition: background-color 1s;
+    width: 35%;
+    height: 10%;
     border-radius: 50%;
-    position: absolute
+    position: absolute;
+    bottom: 20%;
+    left: 28%;
   }
+  
+  .bites2{
+    background-color: var(device-pixel-ratio: );
+    transition: background-color 1s;
+    width: 35%;
+    height: 10%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    left: 28%;
+  }
+  
+  .bites1:hover {
+    background-color: var(--bg);
+  }
+  
+  bites2:hover {
+    background-color: var(--bg);
+  }
+  
 </style>
 <div class="frame">
   <div class="apple"></div>
@@ -160,4 +178,5 @@
   </div>
   <div class="bites"></div>
   <div class="bites1"></div>
+  <div class="bites2"></div>
 </div>
