@@ -85,7 +85,7 @@
     width: 70%;
     height: 40%;
     position: absolute;
-    border-radius: 20%;
+    border-radius: 10% 100% 0% 70%;
     transform: rotate(-50deg);
   }
   
@@ -106,9 +106,27 @@
     left: 60%;
     transform: rotate(-50deg);
   }
+  
+  .leafvein:nth-child(4) {
+    bottom: 400%;
+    left: 100%;
+    transform: rotate(-50deg);
+  }
+  
+  .leafvein:nth-child(5) {
+    bottom: 400%;
+    left: 140%;
+    transform: rotate(-50deg);
+  }
 
+  .leafvein:nth-child(6) {
+    bottom: 320%;
+    left: 170%;
+    transform: rotate(-50deg);
+  }
+  
   .apple:hover {
-    background-color: grey;
+    background-color: orange;
   }
   
   .bites {
@@ -117,6 +135,18 @@
     height: 5%;
     border-radius: 50%;
     position: absolute;
+  }
+  
+  .b1 {
+    right: 6%;
+    top: 28%;
+    visibility: hidden;
+  }
+  
+  .b2 {
+    top: 20%;
+    right: 10%;
+    visibility: hidden;
   }
   
 </style>
@@ -129,6 +159,9 @@
   <div class="leafvein"></div>
   <div class="leafvein"></div>
   <div class="leafvein"></div>
+  <div class="leafvein"></div>
+  <div class="leafvein"></div>
+  <div class="leafvein"></div>
   </div>
   <div class="bites b1"></div>
   <div class="bites b2"></div>
@@ -136,22 +169,24 @@
 
 <script>
   
-  const apple = document.querySelector('.apple')
+  const shell = document.querySelector('.s-right')
+  const tear = document.querySelector('.tear')
+  const mouth = document.querySelector('.mouth')
   const b1 = document.querySelector('.b1')
   const b2 = document.querySelector('.b2')
   
   let clicks = 0
   
-  function biteTaco () {
+  function biteApple () {
     if (clicks === 0) {
       b1.style.visibility = 'visible'
       clicks = 1
     } else if (clicks === 1) {
       b2.style.visibility = 'visible'
       clicks = 2
-    } 
+    }
   }
   
-  apple.addEventListener('click', biteTaco)
+  shell.addEventListener('click', biteTaco)
 
 </script>
