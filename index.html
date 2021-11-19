@@ -16,7 +16,19 @@
     align-items: center;
     background-color: var(--bg);
   }
-
+  .textplaceholder::before {
+    content: "Apple";
+    font-size: 20px;
+  }
+  
+  .textplaceholder {
+  	width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color:var(--bg);
+    top: 50px;
+    left: 50px;
+  }
   .frame {
     /* background-color: rgba(255,0,0,0.3); */
     width: 200px;
@@ -187,11 +199,8 @@
     right: 55%;
   }
   
-  .text {
-    
-  }
 </style>
-
+<div class="textplaceholder"></div>
 <div class="frame">
   <div class="apple"></div>
   <div class="stem"></div>
@@ -212,5 +221,4 @@
   <div class="topdimple1"></div>
   <div class="topdimple2"></div>
   <div class="coverapplebit"></div>
-  <div class="text"></div>
 </div>
