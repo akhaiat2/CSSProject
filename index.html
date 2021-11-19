@@ -16,19 +16,28 @@
     align-items: center;
     background-color: var(--bg);
   }
-  .textplaceholder::before {
-    content: "Apple";
-    font-size: 20px;
+  
+  
+  .placeholder {
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 250px;
+    right: 400px;
+    background-color: var(--bg);
   }
   
-  .textplaceholder {
-  	width: 200px;
-    height: 200px;
-    position: absolute;
-    background-color:var(--bg);
-    top: 50px;
-    left: 50px;
+  .placeholder::after {
+    content: "Apple Inc.";
+    color: var(--bg);
+    font-size: 20px;
+    font-family: "Times New Roman";
   }
+  
+  .placeholder:hover {
+    background-color: red;
+  }
+  
   .frame {
     /* background-color: rgba(255,0,0,0.3); */
     width: 200px;
@@ -200,7 +209,7 @@
   }
   
 </style>
-<div class="textplaceholder"></div>
+<div class="placeholder"></div>
 <div class="frame">
   <div class="apple"></div>
   <div class="stem"></div>
