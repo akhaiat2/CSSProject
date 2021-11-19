@@ -7,7 +7,12 @@
     --green: #2BBF7F;
     --darkbrown: #6630008e;
   }
-
+  
+  div::before
+  div {
+    color: var(--apple);
+  }
+  
   body {
     margin: 0;
     height: 100vh;
@@ -159,25 +164,41 @@
   
   .topdimple1 {
     background-color: var(--bg);
-    width: 8%;
-    height: 3%;
-    border-radius: 120%;
+    width: 14%;
+    height: 4%;
+    border-radius: 40%;
     position: absolute;
-    top: 18%;
-    right: 50.5%;
-    transform: rotate(-60deg);
+    top: 17%;
+    right: 54%;
+    transform: rotate(31deg);
   }
   .topdimple2 {
     background-color: var(--bg);
-    width: 8%;
-    height: 3%;
-    border-radius: 120%;
+    width: 14%;
+    height: 4%;
+    border-radius: 40%;
     position: absolute;
-    top: 18%;
-    right: 54%;
-    transform: rotate(60deg);
+    top: 17%;
+    right: 44%;
+    transform: rotate(-31deg);
+  }
+  .coverapplebit {
+    background-color: var(--bg);
+    width: 3%;
+    height: 2%;
+    border-radius: 40%;
+    position: absolute;
+    top: 19%;
+    right: 55%;
   }
 </style>
+
+<div>hello</div>
+<div>hello</div>
+<div>hello</div>
+<div>hello</div>
+<div>hello</div>
+
 <div class="frame">
   <div class="apple"></div>
   <div class="stem"></div>
@@ -197,4 +218,5 @@
   <div class="bites2"></div>
   <div class="topdimple1"></div>
   <div class="topdimple2"></div>
+  <div class="coverapplebit"></div>
 </div>
