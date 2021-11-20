@@ -17,13 +17,19 @@
     background-color: var(--bg);
   }
   
+  .frame {
+    /* background-color: rgba(255,0,0,0.3); */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+  }
   
   .placeholder {
     width: 100px;
     height: 25px;
     position: absolute;
-    top: 250px;
-    right: 400px;
+    bottom: 250px;
+    right: 200px;
     background-color: var(--bg);
   }
   
@@ -36,13 +42,6 @@
   
   .placeholder:hover {
     background-color: red;
-  }
-  
-  .frame {
-    /* background-color: rgba(255,0,0,0.3); */
-    width: 200px;
-    height: 200px;
-    position: absolute;
   }
 
   .apple {
@@ -209,8 +208,8 @@
   }
   
 </style>
-<div class="placeholder"></div>
 <div class="frame">
+  <div class="placeholder"></div>
   <div class="apple"></div>
   <div class="stem"></div>
   <div class="leaf">
