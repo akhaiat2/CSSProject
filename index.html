@@ -1,3 +1,5 @@
+
+
 <style>
   :root {
     --bg: #009bc8;
@@ -26,18 +28,18 @@
   }
   
   .placeholder {
-    width: 100px;
-    height: 25px;
+    width: 160px;
+    height: 45px;
     position: absolute;
     bottom: 250px;
-    right: -100px;
+    right: -240px;
     background-color: var(--bg);
   }
   
   .placeholder::after {
     content: "Apple Inc.";
     color: var(--bg);
-    font-size: 20px;
+    font-size: 35px;
     font-family: "Times New Roman";
   }
   
@@ -103,14 +105,20 @@
     transform: rotate(5deg);
   }
   .treeleaf:nth-child(6) {
-    top: -60%;
-    right: 160%;
-    transform: rotate(-10deg);
+    top: -80%;
+    right: -30%;
+    transform: rotate(10deg);
   }
   .treeleaf:nth-child(7) {
     top: -60%;
     right: 160%;
     transform: rotate(-10deg);
+  }
+  
+  .treetrunk {
+    background-color: var(--brown);
+    width: 50px;
+    height: 300%;
   }
   
   .stem {
