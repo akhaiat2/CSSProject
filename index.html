@@ -32,20 +32,21 @@
     width: 160px;
     height: 45px;
     position: absolute;
-    bottom: 250px;
-    right: -240px;
-    background-color: var(--bg);
+    bottom: 320px;
+    right: 130px;
+    z-index: 1;
+    background-color: var(--tree);
   }
   
   .placeholder::after {
     content: "Apple Inc.";
-    color: var(--bg);
+    color: var(--tree);
     font-size: 35px;
     font-family: "Times New Roman";
   }
   
   .placeholder:hover {
-    background-color: red;
+    background-color: var(--apple);
   }
 
   .apple {
@@ -154,11 +155,11 @@
   
   .stem {
     background-color: var(--brown);
-    width: 25%;
-    height: 15%;
+    width: 35%;
+    height: 20%;
     position: absolute;
-    bottom: 85%;
-    right: 30%;
+    bottom: 110%;
+    right: 16%;
     border-radius: 95px / 120px 2px;
   }
   
@@ -167,8 +168,8 @@
     width: 35%;
     height: 25%;
     position: absolute;
-    bottom: 85%;
-    right: 55%;
+    bottom: 110%;
+    right: 50%;
     border-radius: 10% 100% 0% 70%;
   }
   .leafstem {
