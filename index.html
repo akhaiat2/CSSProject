@@ -21,7 +21,11 @@
       left: calc(100% - 700px);
     }
   }
-  
+/*    @keyframes mymove {
+    50% {
+    transform: rotate(30deg);
+    }
+	}  */
   body {
     margin: 0;
     height: 100vh;
@@ -70,7 +74,8 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: 20%;
-    top: 20%
+    top: 20%;
+    animation: mymove 5s infinite;
   }
   
   .tree {
@@ -304,21 +309,14 @@
     transform: rotate(-50deg);
   }
   
-  .bites {
-    background-color: var(--bg);
-    width: 15%;
-    height: 8%;
-    border-radius: 50%;
-    position: absolute;
-  }
   
   .bites1{
     background-color: var(--bg);
-    width: 35%;
-    height: 10%;
+    width: 45%;
+    height: 14%;
     border-radius: 50%;
     position: absolute;
-    bottom: 13%;
+    bottom: 0%;
     left: 27%;
   }
   
@@ -384,6 +382,7 @@
     <div class="leafvein"></div>
   </div>
   </div>
+  <div class="bites1"></div>
   </div>
   <div class="tree">
   <div class="treeleaf"></div>
@@ -408,8 +407,6 @@
     <div class="cloudpiece"></div>
     <div class="cloudpiece"></div>
   </div>
-  <div class="bites"></div>
-  <div class="bites1"></div>
   <div class="bites2"></div>
   <div class="topdimple1"></div>
   <div class="topdimple2"></div>
