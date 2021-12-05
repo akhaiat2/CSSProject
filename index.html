@@ -5,6 +5,7 @@
   :root {
     --bg: #009bc8;
     --tree: #00a500;
+    --cloud: #ffffffd6;
     --apple: #ff4e18;
     --spots: #3503102b;
     --brown: #914400;
@@ -151,6 +152,50 @@
     top: -20%;
     right: 100%;
     border-radius: 13em/3em;
+  }
+  
+  .cloud {
+/*     background-color: white; */
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+  }
+  
+  .cloudpiece{
+    background-color: var(--cloud);
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    top: -150%;
+    right: -150%;
+  }
+  
+  .cloudpiece:nth-child(1) {
+    top: -140%;
+    right: -110%;
+    transform: rotate(-5deg);
+  }
+  .cloudpiece:nth-child(2) {
+    top: -130%;
+    right: -110%;
+    transform: rotate(-20deg);
+  }
+  .cloudpiece:nth-child(3) {
+    top: -135%;
+    right: -140%;
+    transform: rotate(20deg);
+  }
+  .cloudpiece:nth-child(4) {
+    top: -140%;
+    right: -110%;
+    transform: rotate(-5deg);
+  }
+  .cloudpiece:nth-child(5) {
+    top: -140%;
+    right: -110%;
+    transform: rotate(-5deg);
   }
   
   .stem {
