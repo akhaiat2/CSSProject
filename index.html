@@ -1,6 +1,7 @@
 <style>
   :root {
     --bg: #009bc8;
+    --tree: #00a500;
     --apple: #ff4e18;
     --spots: #3503102b;
     --brown: #914400;
@@ -58,6 +59,28 @@
     top: 20%
   }
   
+  .tree {
+/*     background-color: var(--tree) */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .treeleaf {
+    background-color: var(--tree);
+    width: 100%;
+    height: 65%;
+    border-radius: 50%;
+    position: absolute;
+    top: -140%;
+    right: 80%
+  }
+  
+  .treeleaf:nth-child(1) {
+    top: -100%;
+    right: 60%;
+    transform: rotate(-40deg);
+  }
   .stem {
     background-color: var(--brown);
     width: 25%;
@@ -211,6 +234,12 @@
 <div class="frame">
   <div class="placeholder"></div>
   <div class="apple"></div>
+  <div class="tree">
+  	<div class="treeleaf"></div>
+    <div class="treeleaf"></div>
+    <div class="treeleaf"></div>
+    <div class="treeleaf"></div>
+  </div>
   <div class="stem"></div>
   <div class="leaf">
     <div class="leafstem"></div>
