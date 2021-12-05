@@ -5,12 +5,21 @@
   :root {
     --bg: #009bc8;
     --tree: #00a500;
-    --cloud: #ffffffd6;
+    --cloud: #fffffffc;
     --apple: #ff4e18;
     --spots: #3503102b;
     --brown: #914400;
     --green: #2BBF7F;
     --darkbrown: #6630008e;
+  }
+  @keyframes horizontal {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: calc(100% - 700px);
+    }
   }
   
   body {
@@ -78,7 +87,7 @@
     border-radius: 50%;
     position: absolute;
     top: -130%;
-    right: 80%
+    right: 80%;
   }
   
   .treeleaf:nth-child(1) {
@@ -156,12 +165,18 @@
   
   .cloud {
 /*     background-color: white; */
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    animation-name: horizontal;
+    animation-delay: 0s, 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
   
-  .cloudpiece{
+  .cloudpiece {
     background-color: var(--cloud);
     width: 60%;
     height: 30%;
@@ -170,6 +185,7 @@
     z-index: 2;
     top: -150%;
     right: -150%;
+    
   }
   
   .cloudpiece:nth-child(1) {
@@ -179,23 +195,28 @@
   }
   .cloudpiece:nth-child(2) {
     top: -130%;
-    right: -110%;
-    transform: rotate(-20deg);
+    right: -90%;
+    transform: rotate(-10deg);
   }
   .cloudpiece:nth-child(3) {
-    top: -135%;
+    top: -130%;
     right: -140%;
-    transform: rotate(20deg);
+    transform: rotate(10deg);
   }
   .cloudpiece:nth-child(4) {
-    top: -140%;
-    right: -110%;
-    transform: rotate(-5deg);
+    top: -110%;
+    right: -130%;
+    transform: rotate(-10deg);
   }
   .cloudpiece:nth-child(5) {
-    top: -140%;
+    top: -110%;
+    right: -95%;
+    transform: rotate(5deg);
+  }
+  .cloudpiece:nth-child(6) {
+    top: -120%;
     right: -110%;
-    transform: rotate(-5deg);
+    transform: rotate(5deg);
   }
   
   .stem {
@@ -381,6 +402,7 @@
   </div>
   <div class="cloud">
   <div class="cloudpiece"></div>
+    <div class="cloudpiece"></div>
     <div class="cloudpiece"></div>
     <div class="cloudpiece"></div>
     <div class="cloudpiece"></div>
