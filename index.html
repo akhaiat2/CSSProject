@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <title>Final Project</title>
 <meta name="author" content="Anthony Khaiat">
-<p>
-  
-  <a href="https://en.wikipedia.org/wiki/Criticism_of_Apple_Inc." target="_blank">All of us Apple fans are being swayed by an ideology of simplicity, we are becoming followers instead of unique individuals, we are their Apples</a>
-</p>
 <style>
   :root {
     --bg: #009bc8;
@@ -14,6 +10,7 @@
     --treechange: #ffd518;
     --spots: #3503102b;
     --brown: #914400;
+    --trunkbrown: #5b4400;
     --green: #2BBF7F;
     --darkbrown: #6630008e;
   }
@@ -30,15 +27,34 @@
 
   @keyframes mymove {
     50% {
-    transform: rotate(30deg);
+      transform: rotate(30deg);
     }
-	}
-  
-  @keyframes treechange {
-    from {background-color: var(--tree);}
-  	to {background-color: var(--treechange);}
   }
-  
+
+  @keyframes treechange {
+    from {
+      background-color: var(--tree);
+    }
+
+    to {
+      background-color: var(--treechange);
+    }
+  }
+
+  @keyframes textchange {
+    0% {
+      color: red;
+    }
+
+    50% {
+      color: green;
+    }
+
+    100% {
+      color: red;
+    }
+  }
+
   body {
     margin: 0;
     height: 100vh;
@@ -75,6 +91,27 @@
     font-family: "Times New Roman";
   }
 
+  .message {
+    width: 160px;
+    height: 45px;
+    position: absolute;
+    bottom: 100px;
+    right: -250px;
+    z-index: 1;
+    background-color: var(--bg);
+  }
+
+  .message::after {
+    text-align: right;
+    content: "All of us Apple fans are being swayed by an ideology of simplicity; we are becoming followers instead of unique individuals, we are their Apples";
+    color: var(--apple);
+    font-size: 15px;
+    font-family: "Times New Roman";
+    animation: textchange 8s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
   .apple {
     background-color: var(--apple);
     width: 40%;
@@ -89,7 +126,7 @@
     z-index: 2;
     animation: mymove 8s infinite;
   }
-  
+
   .apple1 {
     background-color: var(--apple);
     width: 40%;
@@ -104,7 +141,7 @@
     z-index: 2;
     animation: mymove 8s infinite;
   }
-  
+
   .apple2 {
     background-color: var(--apple);
     width: 40%;
@@ -119,7 +156,7 @@
     z-index: 2;
     animation: mymove 8s infinite;
   }
-  
+
   .apple3 {
     background-color: var(--apple);
     width: 40%;
@@ -134,7 +171,7 @@
     z-index: 2;
     animation: mymove 8s infinite;
   }
-  
+
   .apple4 {
     background-color: var(--apple);
     width: 40%;
@@ -254,6 +291,19 @@
     border-radius: 13em/3em;
   }
 
+  .treetrunk1 {
+		background-color: var(--brown);
+    width: 40px;
+    height: 300%;
+    position: absolute;
+    top: -20%;
+    right: 90%;
+    border-radius: 50% 50%;
+  }
+  
+  .treetrunk2 {
+    background-color:
+  }
   .cloud {
     /*     background-color: white; */
     width: 110%;
@@ -276,7 +326,6 @@
     z-index: 2;
     top: -180%;
     right: -150%;
-
   }
 
   .cloudpiece:nth-child(1) {
@@ -463,9 +512,16 @@
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
   }
+
+  .a {
+    mix-blend-mode: multiply;
+  }
 </style>
 <div class="frame">
   <div class="placeholder"></div>
+  <div class="message">
+
+  </div>
   <div class="apple">
     <div class="stem"></div>
     <div class="leaf">
@@ -485,8 +541,8 @@
     <div class="topdimple2"></div>
     <div class="coverapplebit"></div>
   </div>
-  <div class="apple1"> 
-  <div class="stem"></div>
+  <div class="apple1">
+    <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
       <div class="leafveins">
@@ -504,8 +560,8 @@
     <div class="topdimple2"></div>
     <div class="coverapplebit"></div>
   </div>
-  <div class="apple2"> 
-  <div class="stem"></div>
+  <div class="apple2">
+    <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
       <div class="leafveins">
@@ -523,8 +579,8 @@
     <div class="topdimple2"></div>
     <div class="coverapplebit"></div>
   </div>
-  <div class="apple3"> 
-  <div class="stem"></div>
+  <div class="apple3">
+    <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
       <div class="leafveins">
@@ -542,8 +598,8 @@
     <div class="topdimple2"></div>
     <div class="coverapplebit"></div>
   </div>
-  <div class="apple4"> 
-  <div class="stem"></div>
+  <div class="apple4">
+    <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
       <div class="leafveins">
@@ -575,6 +631,9 @@
     <div class="treeleaf"></div>
     <div class="treeleaf"></div>
     <div class="treetrunk"></div>
+    <div class="treetrunk"></div>
+    <div class="treetrunk1"></div>
+    <div class="treetrunk2"></div>
   </div>
   <div class="cloud">
     <div class="cloudpiece"></div>
@@ -587,5 +646,4 @@
 </div>
 <audio autoplay loop>
   <source src="1984 Apple's Macintosh Commercial (HD).m4a" type="audio/mpeg">
-Your browser does not support the audio element.
 </audio>
