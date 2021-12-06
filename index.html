@@ -10,7 +10,7 @@
     --treechange: #ffd518;
     --spots: #3503102b;
     --brown: #914400;
-    --trunkbrown: #5b4400;
+    --trunkbrown: #78440093;
     --green: #2BBF7F;
     --darkbrown: #6630008e;
   }
@@ -105,7 +105,7 @@
     text-align: right;
     content: "All of us Apple fans are being swayed by an ideology of simplicity; we are becoming followers instead of unique individuals, we are their Apples";
     color: var(--apple);
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Times New Roman";
     animation: textchange 8s infinite;
     animation-direction: alternate;
@@ -302,7 +302,33 @@
   }
   
   .treetrunk2 {
-    background-color:
+    background-color: var(--trunkbrown);
+    width: 5px;
+    height: 300%;
+    position: absolute;
+    top: -16%;
+    right: 100%;
+    z-index: 1;
+  }
+  
+  .treetrunk3 {
+    background-color: var(--trunkbrown);
+    width: 5px;
+    height: 300%;
+    position: absolute;
+    top: -6%;
+    right: 112%;
+    z-index: 1;
+  }
+  
+  .treetrunk4 {
+    background-color: var(--trunkbrown);
+    width: 5px;
+    height: 300%;
+    position: absolute;
+    top: -10%;
+    right: 106%;
+    z-index: 1;
   }
   .cloud {
     /*     background-color: white; */
@@ -513,15 +539,10 @@
     animation-timing-function: ease-in-out;
   }
 
-  .a {
-    mix-blend-mode: multiply;
-  }
 </style>
 <div class="frame">
   <div class="placeholder"></div>
-  <div class="message">
-
-  </div>
+  <div class="message"></div>
   <div class="apple">
     <div class="stem"></div>
     <div class="leaf">
@@ -631,6 +652,8 @@
     <div class="treetrunk"></div>
     <div class="treetrunk1"></div>
     <div class="treetrunk2"></div>
+    <div class="treetrunk3"></div>
+    <div class="treetrunk4"></div>
   </div>
   <div class="cloud">
     <div class="cloudpiece"></div>
