@@ -27,7 +27,7 @@
 
   @keyframes mymove {
     50% {
-      transform: rotate(30deg);
+      transform: rotate(4deg);
     }
   }
 
@@ -103,13 +103,23 @@
 
   .message::after {
     text-align: right;
-    content: "All of us Apple fans are being swayed by an ideology of simplicity; we are becoming followers instead of unique individuals, we are their Apples";
+    content: "All of us Apple fans are being swayed by an ideology of simplicity. We are becoming followers instead of unique individuals. We are their Apples";
     color: var(--apple);
     font-size: 18px;
     font-family: "Times New Roman";
     animation: textchange 8s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+  }
+  
+  .apples {
+    /* background-color: rgba(255,0,0,0.3); */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -10%;
+    z-index: 2;
+    animation: mymove 8s infinite;
   }
 
   .apple {
@@ -124,7 +134,6 @@
     right: 15%;
     top: -25%;
     z-index: 2;
-    animation: mymove 8s infinite;
   }
 
   .apple1 {
@@ -139,7 +148,6 @@
     right: 55%;
     top: -20%;
     z-index: 2;
-    animation: mymove 8s infinite;
   }
 
   .apple2 {
@@ -154,7 +162,6 @@
     right: -25%;
     top: -32%;
     z-index: 2;
-    animation: mymove 8s infinite;
   }
 
   .apple3 {
@@ -169,7 +176,6 @@
     right: 130%;
     top: -3%;
     z-index: 2;
-    animation: mymove 8s infinite;
   }
 
   .apple4 {
@@ -184,6 +190,8 @@
     right: 180%;
     top: -3%;
     z-index: 2;
+  }
+  .apple4:onClick {
     animation: appledown 8s infinite;
   }
 
@@ -304,7 +312,7 @@
   .treetrunk2 {
     background-color: var(--trunkbrown);
     width: 5px;
-    height: 300%;
+    height: 294%;
     position: absolute;
     top: -16%;
     right: 100%;
@@ -314,7 +322,7 @@
   .treetrunk3 {
     background-color: var(--trunkbrown);
     width: 5px;
-    height: 300%;
+    height: 285%;
     position: absolute;
     top: -6%;
     right: 112%;
@@ -324,7 +332,7 @@
   .treetrunk4 {
     background-color: var(--trunkbrown);
     width: 5px;
-    height: 300%;
+    height: 290%;
     position: absolute;
     top: -10%;
     right: 106%;
@@ -543,6 +551,7 @@
 <div class="frame">
   <div class="placeholder"></div>
   <div class="message"></div>
+  <div class="apples">
   <div class="apple">
     <div class="stem"></div>
     <div class="leaf">
@@ -562,7 +571,7 @@
     <div class="topdimple2"></div>
     <div class="coverapplebit"></div>
   </div>
-  <div class="apple1">
+    <div class="apple1">
     <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
@@ -634,6 +643,7 @@
     </div>
     <div class="bites1"></div>
     <div class="bites2"></div>
+  </div>
   </div>
   <div class="tree">
     <div class="treeleaf"></div>
