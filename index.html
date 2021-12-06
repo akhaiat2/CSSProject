@@ -67,16 +67,46 @@
 
   .apple {
     background-color: var(--apple);
-    width: 70%;
-    height: 65%;
+    width: 40%;
+    height: 35%;
     border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
-    background-image: radial-gradient(var(--spots) 5%, transparent 0),
-      radial-gradient(var(--spots) 5%, transparent 0);
+    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
     background-size: 50px 30px;
     background-position: 0 0, 17px 17px;
     position: absolute;
-    right: 20%;
-    top: 20%;
+    right: 15%;
+    top: -20%;
+    z-index: 2;
+    animation: mymove 8s infinite;
+  }
+  
+  .apple1 {
+    background-color: var(--apple);
+    width: 40%;
+    height: 35%;
+    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
+    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
+    background-size: 50px 30px;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+    right: 55%;
+    top: -20%;
+    z-index: 2;
+    animation: mymove 8s infinite;
+  }
+  
+  .apple2 {
+    background-color: var(--apple);
+    width: 40%;
+    height: 35%;
+    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
+    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
+    background-size: 50px 30px;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+    right: -25%;
+    top: -25%;
+    z-index: 2;
     animation: mymove 8s infinite;
   }
 
@@ -347,7 +377,7 @@
     border-radius: 50% 50% 50% 50%;
     position: absolute;
     bottom: 42%;
-    left: 63%;
+    left: 64%;
     transform: rotate(-91deg);
   }
 
@@ -369,7 +399,7 @@
     border-radius: 40%;
     position: absolute;
     top: -2%;
-    right: 40%;
+    right: 42%;
     transform: rotate(-30deg);
   }
 
@@ -387,6 +417,44 @@
   <div class="placeholder"></div>
   <div class="apple">
     <div class="stem"></div>
+    <div class="leaf">
+      <div class="leafstem"></div>
+      <div class="leafveins">
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+      </div>
+    </div>
+    <div class="bites1"></div>
+    <div class="bites2"></div>
+    <div class="topdimple1"></div>
+    <div class="topdimple2"></div>
+    <div class="coverapplebit"></div>
+  </div>
+  <div class="apple1"> 
+  <div class="stem"></div>
+    <div class="leaf">
+      <div class="leafstem"></div>
+      <div class="leafveins">
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+      </div>
+    </div>
+    <div class="bites1"></div>
+    <div class="bites2"></div>
+    <div class="topdimple1"></div>
+    <div class="topdimple2"></div>
+    <div class="coverapplebit"></div>
+  </div>
+  <div class="apple2"> 
+  <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
       <div class="leafveins">
