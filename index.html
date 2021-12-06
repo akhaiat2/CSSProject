@@ -7,7 +7,7 @@
     --tree: #00a500;
     --cloud: #fffffffc;
     --apple: #ff4e18;
-    --treechange: #ffd518;
+    --treechange: #c4f118;
     --spots: #3503102b;
     --brown: #914400;
     --trunkbrown: #78440093;
@@ -21,7 +21,7 @@
     }
 
     100% {
-      left: calc(100% - 1000px);
+      left: calc(100% - 1200px);
     }
   }
 
@@ -29,6 +29,11 @@
     50% {
       transform: rotate(4deg);
     }
+  }
+  
+  @keyframes applechange {
+		from {background-color: var(--apple);}
+  	to {background-color: var(--brown);}
   }
 
   @keyframes treechange {
@@ -134,6 +139,9 @@
     right: 15%;
     top: -25%;
     z-index: 2;
+    animation: applechange 12s, appledown linear 4s 8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
   .apple1 {
@@ -191,7 +199,7 @@
     top: -3%;
     z-index: 2;
   }
-  .apple4:onClick {
+  .apple4:hover {
     animation: appledown 8s infinite;
   }
 
