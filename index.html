@@ -7,6 +7,7 @@
     --tree: #00a500;
     --cloud: #fffffffc;
     --apple: #ff4e18;
+    --treechange: #ffd518;
     --spots: #3503102b;
     --brown: #914400;
     --green: #2BBF7F;
@@ -15,11 +16,11 @@
 
   @keyframes horizontal {
     0% {
-      left: 0px;
+      left: 150%;
     }
 
     100% {
-      left: calc(100% - 700px);
+      left: calc(100% - 1000px);
     }
   }
 
@@ -27,7 +28,13 @@
     50% {
     transform: rotate(30deg);
     }
-	}   
+	}
+  
+  @keyframes treechange {
+    from {background-color: var(--tree);}
+  	to {background-color: var(--treechange);}
+  }
+  
   body {
     margin: 0;
     height: 100vh;
@@ -52,6 +59,7 @@
     right: 130px;
     z-index: 1;
     background-color: var(--tree);
+    animation: treechange 8s infinite;
   }
 
   .placeholder::after {
@@ -59,10 +67,6 @@
     color: var(--tree);
     font-size: 35px;
     font-family: "Times New Roman";
-  }
-
-  .placeholder:hover {
-    background-color: var(--apple);
   }
 
   .apple {
@@ -109,6 +113,36 @@
     z-index: 2;
     animation: mymove 8s infinite;
   }
+  
+  .apple3 {
+    background-color: var(--apple);
+    width: 40%;
+    height: 35%;
+    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
+    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
+    background-size: 50px 30px;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+    right: 130%;
+    top: -3%;
+    z-index: 2;
+    animation: mymove 8s infinite;
+  }
+  
+  .apple4 {
+    background-color: var(--apple);
+    width: 40%;
+    height: 35%;
+    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
+    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
+    background-size: 50px 30px;
+    background-position: 0 0, 17px 17px;
+    position: absolute;
+    right: 180%;
+    top: -3%;
+    z-index: 2;
+    animation: mymove 8s infinite;
+  }
 
   .tree {
     /*     background-color: var(--tree) */
@@ -125,6 +159,7 @@
     position: absolute;
     top: -130%;
     right: 80%;
+    animation: treechange 8s infinite;
   }
 
   .treeleaf:nth-child(1) {
@@ -231,7 +266,7 @@
     position: absolute;
     border-radius: 50%;
     z-index: 2;
-    top: -150%;
+    top: -180%;
     right: -150%;
 
   }
@@ -358,7 +393,6 @@
     transform: rotate(-50deg);
   }
 
-
   .bites1 {
     background-color: var(--bg);
     width: 45%;
@@ -454,6 +488,44 @@
     <div class="coverapplebit"></div>
   </div>
   <div class="apple2"> 
+  <div class="stem"></div>
+    <div class="leaf">
+      <div class="leafstem"></div>
+      <div class="leafveins">
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+      </div>
+    </div>
+    <div class="bites1"></div>
+    <div class="bites2"></div>
+    <div class="topdimple1"></div>
+    <div class="topdimple2"></div>
+    <div class="coverapplebit"></div>
+  </div>
+  <div class="apple3"> 
+  <div class="stem"></div>
+    <div class="leaf">
+      <div class="leafstem"></div>
+      <div class="leafveins">
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+        <div class="leafvein"></div>
+      </div>
+    </div>
+    <div class="bites1"></div>
+    <div class="bites2"></div>
+    <div class="topdimple1"></div>
+    <div class="topdimple2"></div>
+    <div class="coverapplebit"></div>
+  </div>
+  <div class="apple4"> 
   <div class="stem"></div>
     <div class="leaf">
       <div class="leafstem"></div>
