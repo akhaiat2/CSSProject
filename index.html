@@ -49,6 +49,11 @@
       color: red;
     }
   }
+  
+  @keyframes appledown {
+    from {top: 0px;}
+  	to {top: 300%;}
+  }
 
   body {
     margin: 0;
@@ -179,7 +184,7 @@
     right: 180%;
     top: -3%;
     z-index: 2;
-    animation: mymove 8s infinite;
+    animation: appledown 8s infinite;
   }
 
   .tree {
@@ -608,9 +613,6 @@
     </div>
     <div class="bites1"></div>
     <div class="bites2"></div>
-    <div class="topdimple1"></div>
-    <div class="topdimple2"></div>
-    <div class="coverapplebit"></div>
   </div>
   <div class="tree">
     <div class="treeleaf"></div>
