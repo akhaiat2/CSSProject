@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <title>Final Project</title>
 <meta name="author" content="Anthony Khaiat">
+<!--All of us Apple fans are being swayed by an ideology of simplicity, we are becoming followers instead of unique individuals, we are their Apples.  -->
 <style>
   :root {
     --bg: #009bc8;
@@ -81,7 +82,7 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: 15%;
-    top: -20%;
+    top: -25%;
     z-index: 2;
     animation: mymove 8s infinite;
   }
@@ -111,7 +112,7 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: -25%;
-    top: -25%;
+    top: -32%;
     z-index: 2;
     animation: mymove 8s infinite;
   }
@@ -252,8 +253,8 @@
 
   .cloud {
     /*     background-color: white; */
-    width: 90%;
-    height: 90%;
+    width: 120%;
+    height: 100%;
     position: absolute;
     animation-name: horizontal;
     animation-delay: 0s, 1s;
@@ -428,6 +429,9 @@
     top: -2%;
     right: 52%;
     transform: rotate(30deg);
+    animation: treechange 8s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
   .topdimple2 {
@@ -439,6 +443,9 @@
     top: -2%;
     right: 42%;
     transform: rotate(-30deg);
+    animation: treechange 8s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
   .coverapplebit {
@@ -449,6 +456,9 @@
     position: absolute;
     top: -3%;
     right: 50%;
+    animation: treechange 8s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 </style>
 <div class="frame">
