@@ -30,15 +30,25 @@
       transform: rotate(4deg);
     }
   }
-  
+
   @keyframes applechange {
-		from {background-color: var(--apple);}
-  	to {background-color: var(--brown);}
+    0% {
+      background-color: var(--apple);
+    }
+
+    100% {
+      background-color: var(--brown);
+    }
   }
 
   @keyframes treechange {
-		from {background-color: var(--tree);}
-  	to {background-color: var(--treechange);}
+    0% {
+      background-color: var(--tree);
+    }
+
+    100% {
+      background-color: var(--treechange);
+    }
   }
 
   @keyframes textchange {
@@ -54,10 +64,15 @@
       color: red;
     }
   }
-  
+
   @keyframes appledown {
-    from {top: 0px;}
-  	to {top: 300%;}
+    0% {
+      top: 0px;
+    }
+
+    100% {
+      top: 300%;
+    }
   }
 
   body {
@@ -68,7 +83,7 @@
     align-items: center;
     background-color: var(--bg);
   }
-  
+
   audio {
     margin: 0;
     display: flex;
@@ -129,7 +144,7 @@
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
   }
-  
+
   .appledown {
     /* background-color: rgba(255,0,0,0.3); */
     width: 200px;
@@ -139,7 +154,7 @@
     z-index: 2;
     animation: appledown 4s linear 8s;
   }
-  
+
   .apples {
     /* background-color: rgba(255,0,0,0.3); */
     width: 200px;
@@ -330,7 +345,7 @@
   }
 
   .treetrunk1 {
-		background-color: var(--brown);
+    background-color: var(--brown);
     width: 40px;
     height: 300%;
     position: absolute;
@@ -338,7 +353,7 @@
     right: 90%;
     border-radius: 50% 50%;
   }
-  
+
   .treetrunk2 {
     background-color: var(--trunkbrown);
     width: 5px;
@@ -348,7 +363,7 @@
     right: 100%;
     z-index: 1;
   }
-  
+
   .treetrunk3 {
     background-color: var(--trunkbrown);
     width: 5px;
@@ -358,7 +373,7 @@
     right: 112%;
     z-index: 1;
   }
-  
+
   .treetrunk4 {
     background-color: var(--trunkbrown);
     width: 5px;
@@ -368,6 +383,7 @@
     right: 106%;
     z-index: 1;
   }
+
   .cloud {
     /*     background-color: white; */
     width: 110%;
@@ -576,106 +592,105 @@
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
   }
-
 </style>
 <div class="frame">
   <div class="placeholder"></div>
   <div class="message"></div>
   <div class="appledown">
-  <div class="apples">
-  <div class="apple">
-    <div class="stem"></div>
-    <div class="leaf">
-      <div class="leafstem"></div>
-      <div class="leafveins">
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
+    <div class="apples">
+      <div class="apple">
+        <div class="stem"></div>
+        <div class="leaf">
+          <div class="leafstem"></div>
+          <div class="leafveins">
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+          </div>
+        </div>
+        <div class="bites1"></div>
+        <div class="bites2"></div>
+        <div class="topdimple1"></div>
+        <div class="topdimple2"></div>
+        <div class="coverapplebit"></div>
+      </div>
+      <div class="apple1">
+        <div class="stem"></div>
+        <div class="leaf">
+          <div class="leafstem"></div>
+          <div class="leafveins">
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+          </div>
+        </div>
+        <div class="bites1"></div>
+        <div class="bites2"></div>
+        <div class="topdimple1"></div>
+        <div class="topdimple2"></div>
+        <div class="coverapplebit"></div>
+      </div>
+      <div class="apple2">
+        <div class="stem"></div>
+        <div class="leaf">
+          <div class="leafstem"></div>
+          <div class="leafveins">
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+          </div>
+        </div>
+        <div class="bites1"></div>
+        <div class="bites2"></div>
+        <div class="topdimple1"></div>
+        <div class="topdimple2"></div>
+        <div class="coverapplebit"></div>
+      </div>
+      <div class="apple3">
+        <div class="stem"></div>
+        <div class="leaf">
+          <div class="leafstem"></div>
+          <div class="leafveins">
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+          </div>
+        </div>
+        <div class="bites1"></div>
+        <div class="bites2"></div>
+        <div class="topdimple1"></div>
+        <div class="topdimple2"></div>
+        <div class="coverapplebit"></div>
+      </div>
+      <div class="apple4">
+        <div class="stem"></div>
+        <div class="leaf">
+          <div class="leafstem"></div>
+          <div class="leafveins">
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+            <div class="leafvein"></div>
+          </div>
+        </div>
+        <div class="bites1"></div>
+        <div class="bites2"></div>
       </div>
     </div>
-    <div class="bites1"></div>
-    <div class="bites2"></div>
-    <div class="topdimple1"></div>
-    <div class="topdimple2"></div>
-    <div class="coverapplebit"></div>
-  </div>
-    <div class="apple1">
-    <div class="stem"></div>
-    <div class="leaf">
-      <div class="leafstem"></div>
-      <div class="leafveins">
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-      </div>
-    </div>
-    <div class="bites1"></div>
-    <div class="bites2"></div>
-    <div class="topdimple1"></div>
-    <div class="topdimple2"></div>
-    <div class="coverapplebit"></div>
-  </div>
-  <div class="apple2">
-    <div class="stem"></div>
-    <div class="leaf">
-      <div class="leafstem"></div>
-      <div class="leafveins">
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-      </div>
-    </div>
-    <div class="bites1"></div>
-    <div class="bites2"></div>
-    <div class="topdimple1"></div>
-    <div class="topdimple2"></div>
-    <div class="coverapplebit"></div>
-  </div>
-  <div class="apple3">
-    <div class="stem"></div>
-    <div class="leaf">
-      <div class="leafstem"></div>
-      <div class="leafveins">
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-      </div>
-    </div>
-    <div class="bites1"></div>
-    <div class="bites2"></div>
-    <div class="topdimple1"></div>
-    <div class="topdimple2"></div>
-    <div class="coverapplebit"></div>
-  </div>
-  <div class="apple4">
-    <div class="stem"></div>
-    <div class="leaf">
-      <div class="leafstem"></div>
-      <div class="leafveins">
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-        <div class="leafvein"></div>
-      </div>
-    </div>
-    <div class="bites1"></div>
-    <div class="bites2"></div>
-  </div>
-  </div>
   </div>
   <div class="tree">
     <div class="treeleaf"></div>
@@ -707,8 +722,7 @@
   </div>
 </div>
 <body>
-    <audio controls autoplay loop>
-        <source src="1984 Apple's Macintosh Commercial (HD).m4a" type="audio/mpeg">
-		</audio>
+  <audio controls autoplay loop>
+    <source src="1984 Apple's Macintosh Commercial (HD).m4a" type="audio/mpeg">
+  </audio>
 </body>
-
