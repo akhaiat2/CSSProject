@@ -117,6 +117,16 @@
     animation-timing-function: ease-in-out;
   }
   
+  .appledown {
+    /* background-color: rgba(255,0,0,0.3); */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -10%;
+    z-index: 2;
+    animation: appledown 4s linear 8s;
+  }
+  
   .apples {
     /* background-color: rgba(255,0,0,0.3); */
     width: 200px;
@@ -137,9 +147,9 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: 15%;
-    top: -32%;
+    top: -40%;
     z-index: 2;
-    animation: applechange 12s, appledown linear 4s 8s;
+    animation: applechange 12s linear infinite;
   }
 
   .apple1 {
@@ -152,9 +162,9 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: 55%;
-    top: -20%;
+    top: -32%;
     z-index: 2;
-    animation: applechange 12s, appledown linear 4s 8s;
+    animation: applechange 12s linear infinite;
   }
 
   .apple2 {
@@ -167,9 +177,9 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: -25%;
-    top: -38%;
+    top: -50%;
     z-index: 2;
-    animation: applechange 12s, appledown linear 4s 8s;
+    animation: applechange 12s linear infinite;
   }
 
   .apple3 {
@@ -182,9 +192,9 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: 130%;
-    top: -7%;
+    top: -14%;
     z-index: 2;
-    animation: applechange 12s, appledown linear 4s 8s;
+    animation: applechange 12s linear infinite;
   }
 
   .apple4 {
@@ -197,9 +207,9 @@
     background-position: 0 0, 17px 17px;
     position: absolute;
     right: 180%;
-    top: -3%;
+    top: -13%;
     z-index: 2;
-    animation: applechange 12s, appledown 4s linear 8s;
+    animation: applechange 12s linear infinite;
   }
 
   .tree {
@@ -558,6 +568,7 @@
 <div class="frame">
   <div class="placeholder"></div>
   <div class="message"></div>
+  <div class="appledown">
   <div class="apples">
   <div class="apple">
     <div class="stem"></div>
@@ -650,6 +661,7 @@
     </div>
     <div class="bites1"></div>
     <div class="bites2"></div>
+  </div>
   </div>
   </div>
   <div class="tree">
