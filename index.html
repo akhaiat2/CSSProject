@@ -27,7 +27,7 @@
 
   @keyframes mymove {
     50% {
-      transform: rotate(5deg);
+      transform: rotate(15deg);
     }
   }
 
@@ -160,16 +160,6 @@
     animation-iteration-count: infinite;
   }
 
-  .apples {
-    /* background-color: rgba(255,0,0,0.3); */
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    bottom: -10%;
-    z-index: 2;
-    animation: mymove 16s infinite;
-  }
-
   .apple {
     background-color: var(--apple);
     width: 40%;
@@ -178,71 +168,42 @@
     background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
     background-size: 50px 30px;
     background-position: 0 0, 17px 17px;
+    animation: applechange 12s linear infinite, mymove 16s infinite;
+  }
+  
+  .apple:nth-child(1) {
     position: absolute;
     right: 15%;
     top: -40%;
     z-index: 2;
-    animation: applechange 12s linear infinite;
   }
-
-  .apple1 {
-    background-color: var(--apple);
-    width: 40%;
-    height: 35%;
-    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
-    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
-    background-size: 50px 30px;
-    background-position: 0 0, 17px 17px;
+  
+  .apple:nth-child(2) {
     position: absolute;
     right: 55%;
     top: -32%;
     z-index: 2;
-    animation: applechange 12s linear infinite;
   }
-
-  .apple2 {
-    background-color: var(--apple);
-    width: 40%;
-    height: 35%;
-    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
-    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
-    background-size: 50px 30px;
-    background-position: 0 0, 17px 17px;
+  
+  .apple:nth-child(3) {
     position: absolute;
     right: -25%;
     top: -50%;
     z-index: 2;
-    animation: applechange 12s linear infinite;
   }
-
-  .apple3 {
-    background-color: var(--apple);
-    width: 40%;
-    height: 35%;
-    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
-    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
-    background-size: 50px 30px;
-    background-position: 0 0, 17px 17px;
+  
+  .apple:nth-child(4) {
     position: absolute;
     right: 130%;
     top: -14%;
     z-index: 2;
-    animation: applechange 12s linear infinite;
   }
-
-  .apple4 {
-    background-color: var(--apple);
-    width: 40%;
-    height: 35%;
-    border-radius: 40% 50% 50% 50% / 40% 50% 50% 50%;
-    background-image: radial-gradient(var(--spots) 5%, transparent 0), radial-gradient(var(--spots) 5%, transparent 0);
-    background-size: 50px 30px;
-    background-position: 0 0, 17px 17px;
+  
+  .apple:nth-child(5) {
     position: absolute;
     right: 180%;
     top: -10%;
     z-index: 2;
-    animation: applechange 12s linear infinite;
   }
 
   .tree {
@@ -602,7 +563,6 @@
   <div class="placeholder"></div>
   <div class="message"></div>
   <div class="appledown">
-    <div class="apples">
       <div class="apple">
         <div class="stem"></div>
         <div class="leaf">
@@ -622,7 +582,7 @@
         <div class="topdimple2"></div>
         <div class="coverapplebit"></div>
       </div>
-      <div class="apple1">
+      <div class="apple">
         <div class="stem"></div>
         <div class="leaf">
           <div class="leafstem"></div>
@@ -641,7 +601,7 @@
         <div class="topdimple2"></div>
         <div class="coverapplebit"></div>
       </div>
-      <div class="apple2">
+      <div class="apple">
         <div class="stem"></div>
         <div class="leaf">
           <div class="leafstem"></div>
@@ -660,7 +620,7 @@
         <div class="topdimple2"></div>
         <div class="coverapplebit"></div>
       </div>
-      <div class="apple3">
+      <div class="apple">
         <div class="stem"></div>
         <div class="leaf">
           <div class="leafstem"></div>
@@ -679,7 +639,7 @@
         <div class="topdimple2"></div>
         <div class="coverapplebit"></div>
       </div>
-      <div class="apple4">
+      <div class="apple">
         <div class="stem"></div>
         <div class="leaf">
           <div class="leafstem"></div>
@@ -695,7 +655,6 @@
         <div class="bites1"></div>
         <div class="bites2"></div>
       </div>
-    </div>
   </div>
   <div class="tree">
     <div class="treeleaf"></div>
