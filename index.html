@@ -69,6 +69,10 @@
     0% {
       top: 0px;
     }
+    
+    66% {
+      top: 0px;
+    }
 
     100% {
       top: 300%;
@@ -152,7 +156,8 @@
     position: absolute;
     bottom: -10%;
     z-index: 2;
-    animation: appledown 4s linear 8s;
+    animation: appledown 12s linear;
+    animation-iteration-count: infinite;
   }
 
   .apples {
@@ -722,7 +727,7 @@
   </div>
 </div>
 <body>
-  <audio controls autoplay loop>
+  <audio controls loop>
     <source src="1984 Apple's Macintosh Commercial (HD).m4a" type="audio/mpeg">
   </audio>
 </body>
