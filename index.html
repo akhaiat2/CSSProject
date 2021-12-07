@@ -68,6 +68,19 @@
     align-items: center;
     background-color: var(--bg);
   }
+  
+  audio {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 45px;
+    position: relative;
+    bottom: -200px;
+    right: -200px;
+    z-index: 1;
+  }
 
   .frame {
     /* background-color: rgba(255,0,0,0.3); */
@@ -694,8 +707,8 @@
   </div>
 </div>
 <body>
-  <audio autoplay loop>
-  <source src="1984 Apple's Macintosh Commercial (HD).m4a" type="audio/mpeg">
-</audio>
+    <audio controls autoplay loop>
+        <source src="1984 Apple's Macintosh Commercial (HD).m4a" type="audio/mpeg">
+		</audio>
 </body>
 
